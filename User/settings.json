@@ -1,0 +1,123 @@
+{
+    "files.autoSave": "onFocusChange",
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "go.formatTool": "gofmt",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "sqltools.highlightQuery": false,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "workbench.colorTheme": "Tokyo Storm Gogh",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.cursorStylePerMode.visualblock": "block",
+    "vim.cursorStylePerMode.visualline": "block",
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+
+    ],
+    "vim.leader": "<Space>",
+    "vim.iskeyword": "+=-",
+    "editor.wordSeparators": "+=-",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Navigate between windows
+        {
+            "before": ["<C-h>"],
+            "after": ["<C-w>h"],
+            "silent": true
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["<C-w>j"],
+            "silent": true
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-w>k"],
+            "silent": true
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<C-w>l"],
+            "silent": true
+        },
+
+        // Display
+        // Toggle sidebar
+        {
+            "before": ["<Leader>", "d", "t"],
+            "commands": ["workbench.action.toggleSidebarVisibility"],
+            "silent": true
+        },
+        // Explorer
+        {
+            "before": ["<Leader>", "d", "e"],
+            "commands": ["workbench.view.explorer"],
+            "silent": true
+        },
+        // Search in files
+        {
+            "before": ["<Leader>", "d", "s"],
+            "commands": ["workbench.view.search"],
+            "silent": true
+        },
+        // Search files
+        {
+            "before": ["<Leader>", "d", "f"],
+            "commands": ["workbench.action.quickOpen"],
+            "silent": true
+        },
+
+        // Save file
+        {
+            "before": ["<Leader>", "w"],
+            "commands": [":w"],
+            "silent": true
+        },
+        // Exit file
+        {
+            "before": ["<Leader>", "q"],
+            "commands": [":q"],
+            "silent": true
+        },
+
+        // Signature
+        // Go to definition
+        {
+            "before": ["<Leader>", "s", "d"],
+            "commands": ["editor.action.goToDeclaration"],
+            "silent": true
+        },
+        // Preview definition
+        {
+            "before": ["<Leader>", "s", "p"],
+            "commands": ["editor.action.previewDeclaration"],
+            "silent": true
+        },
+        // Preview references
+        {
+            "before": ["<Leader>", "s", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"],
+            "silent": true
+        },
+
+        // Navigate buffers/tabs
+        {
+            "before": ["<S-h>"],
+            "commands": [":bprevious"],
+            "silent": true
+        },
+        {
+            "before": ["<S-l>"],
+            "commands": [":bnext"],
+            "silent": true
+        },
+    ]
+}
