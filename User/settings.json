@@ -11,9 +11,9 @@
     "vim.cursorStylePerMode.insert": "line",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.replace": "block",
-    "vim.cursorStylePerMode.visual": "block",
-    "vim.cursorStylePerMode.visualblock": "block",
-    "vim.cursorStylePerMode.visualline": "block",
+    "vim.cursorStylePerMode.visual": "line",
+    "vim.cursorStylePerMode.visualblock": "line",
+    "vim.cursorStylePerMode.visualline": "line",
     "vim.highlightedyank.enable": true,
     "vim.hlsearch": true,
     "vim.insertModeKeyBindingsNonRecursive": [
@@ -24,31 +24,8 @@
 
     ],
     "vim.leader": "<Space>",
-    "vim.iskeyword": "+=-",
-    "editor.wordSeparators": "+=-",
+    "vim.iskeyword": ",. '\"", "editor.wordSeparators": ",. '\"",
     "vim.normalModeKeyBindingsNonRecursive": [
-        // Navigate between windows
-        {
-            "before": ["<C-h>"],
-            "after": ["<C-w>h"],
-            "silent": true
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["<C-w>j"],
-            "silent": true
-        },
-        {
-            "before": ["<C-k>"],
-            "after": ["<C-w>k"],
-            "silent": true
-        },
-        {
-            "before": ["<C-l>"],
-            "after": ["<C-w>l"],
-            "silent": true
-        },
-
         // Display
         // Toggle sidebar
         {
@@ -119,5 +96,7 @@
             "commands": [":bnext"],
             "silent": true
         },
-    ]
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
 }
